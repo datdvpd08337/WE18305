@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>asm</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css.css">
+
+</head>
+<body>
+  <div class="header-top">
+    <div class="container container-wrap">
+        <a href="#" class="header-logo">PHÁT ĐẠT SHOP</a>
+        <ul class="header-menu">
+            <li class="menu-item">
+                <a href="#" class="menu-link">Trang Chủ</a>
+            </li>            
+            <li class="menu-item">
+                <a href="#sp" class="menu-link">Sản Phẩm</a>
+            </li>
+            <li class="menu-item">
+                <a href="#contact" class="menu-link">Liên Hệ</a>
+            </li>
+        </ul>
+        <div class="header-account">
+            <button class="account-btn">
+                <a href="#!" class="account-link">Sign Up</a>
+            </button>
+            <button class="btn-red">
+                <a href="#!" class="account-link">Sign in</a>
+            </button>
+        </div>
+    </div>
+
+
+  <div class="slideshow-container" >
+    
+<div class="header" >
+    
+  <div class="mySlides fade"  >
+    
+    <img src="anh/tủ lạnh.jpg" style="width:1460px" height="680px"><br>
+    <div class="text"></div><br>
+  
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="anh/BÀN.jpg" style="width:1460px" height="680px">
+    <div class="text"></div>
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="anh/bàn phím.jpg" style="width:1460px" height="680px">
+    <div class="text"></div>
+  </div>
+  <div class="mySlides fade">  
+      <img src="anh/tivi.jpg" style="width:1460px" height="680px">
+      <div class="text"></div>
+    </div>
+
+    
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  
+</div>
+
+  <div class="main" id="sp">
+    <h2 style="color: crimson;"id="sanpham">ĐỒ Gia Dụng</h2>
+    <div class="fakeimg" style="height: 358px;" >
+      <div class="sanpham" id="sanpham"><img src="anh/tủ lạnh.jpg" height="300px" width="350px"><br> 
+    <span class="item-des">
+      TỦ LẠNH SONY
+    </span><br>
+    <span class="itemSP" style="color: red;">
+        10.000.000
+      </span>
+    </div> 
+      <div class="sanpham" id="sanpham"><img src="anh/tivi.jpg" height="300px" width="350px"><br>
+        <span class="item-des">
+            TIVI SONY
+          </span><br>
+          <span class="itemSP" style="color: red;">
+              5.000.000
+            </span>
+    </div>
+      <div class="sanpham" id="sanpham"><img src="anh/th.jpg"  height="300px" width="350px"><br>
+        <span class="item-des">
+             GHẾ CÔNG THÁI HỌC
+          </span><br>
+          <span class="itemSP" style="color: red;">
+              8.000.000
+            </span>
+    </div>
+
+      <div class="sanpham" id="sanpham"><img src="anh/máy hút bụi.jpg"  height="300px" width="350px"><br>
+        <span class="item-des">
+            MÁY HÚT BỤI BARASONIC
+         </span><br>
+         <span class="itemSP" style="color: red;">
+             15.000.000
+           </span>
+   </div>
+    </div>
+    </div>
+  
+    
+    <div class="fakeimg" style="height: 300px;;">
+        <div class="sanpham" id="sanpham"><img src="anh/bàn phím.jpg" height="300px" width="350px"><br> 
+        <span class="item-des">
+          BÀN PHÍM GAMING
+        </span><br>
+        <span class="itemSP" style="color: red;">
+            1.000.000
+          </span>
+        </div> 
+          <div class="sanpham" id="sanpham"><img src="anh/BÀN.jpg" height="300px" width="350px"><br>
+            <span class="item-des">
+                BÀN GAMING
+              </span><br>
+              <span class="itemSP" style="color: red;">
+                  5.000.000
+                </span>
+        </div>
+          <div class="sanpham" id="sanpham"><img src="anh/máy nước nóng.jpg"  height="300px" width="350px"><br>
+            <span class="item-des">
+                 MÁY NƯỚC NÓNG
+              </span><br>
+              <span class="itemSP" style="color: red;">
+                  8.000.000
+                </span>
+        </div>
+          <div class="sanpham" id="sanpham"><img src="anh/tivi.jpg"300px" width="450px"><br>
+            <span class="item-des">
+                TIVI GALAXY
+             </span><br>
+             <span class="itemSP" style="color: red;">
+                 15.000.000
+               </span>
+  </div>
+    
+  </div>
+</div><br><br><br>
+<section id="contact" class="contact ptb-200">
+  <div class="container">
+      <div class="contact-container">
+          <h1 class="contact-heading">Liên Hệ Với Chúng Tôi</h1>
+          <form action="" class="contact-form" method="post" id="form-1">
+              <div class="form-group">
+                  <label for="fullname" class="contact-title">Name</label>
+                  <input id="fullname" name="fullname" type="text" placeholder="Nhập họ và tên" class="contact-input" required>
+                  <span class="form-message"></span>
+              </div>
+
+              <div class="form-group">
+                  <div class="input-wrap">
+                      <div class="form-group">
+                          <label for="email" class="contact-title">Email</label>
+                          <input id="email" name="email" type="email" placeholder="Nhập email" class="contact-input" required>
+                          <span class="form-message"></span>
+                      </div>
+                      <div class="form-group">
+                          <label for="telphone" class="contact-title">Phone Number</label>
+                          <input id="telphone" name="telphone" type="tel" placeholder="Nhập số điện thoại" class="contact-input"
+                              required>
+                          <span class="form-message"></span>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="form-group">
+                  <label for="message" class="contact-title">Phản hồi với chúng tôi</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Write a Message"
+                  class="contact-textarea-message" required></textarea>
+                  <span class="form-message"></span>
+                  <button type="submit" class="btn-submit">Phản Hồi</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</section>
+
+<iframe class="bd" src="https://www.google.com/maps/d/u/0/embed?mid=19KqNkzWMgPGHqgmpcOpftttATYdcbZo&ehbc=2E312F" width="500" height="360"></iframe>
+<div class="footer">
+    <div >
+        <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>41 Cao Sơn Pháo-Hòa An-Cẩm Lệ-Đà Nẵng</p>
+        <p>Hotline: 09999999999</p>
+        <p>Email: datdvpd08337@fpt.edu.vn</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        </div>
+        <h2>Footer</h2>
+
+</div>
+<script src="js.js"></script>
+</body>
+</html>
+
