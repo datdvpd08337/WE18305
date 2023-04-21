@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<head>
+	<title>Đăng nhập</title>
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		input[type=text], input[type=password] {
+			padding: 10px;
+			margin: 10px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 5px gray;
+		}
+		input[type=submit] {
+			padding: 10px;
+			margin: 10px;
+			border: none;
+			border-radius: 5px;
+			background-color: blue;
+			color: white;
+			font-weight: bold;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label for="username">Tài khoản:</label>
+		<input type="text" id="username" name="username">
+
+		<label for="password">Mật khẩu:</label>
+		<input type="password" id="password" name="password">
+
+		<input type="submit" value="Đăng nhập">
+	</form>
+	
+	<script>
+		const form = document.querySelector('form');
+		form.addEventListener('submit', function(event) {
+			event.preventDefault(); // Ngăn chặn trang web load lại khi người dùng ấn submit
+			const username = document.getElementById('username').value;
+			const password = document.getElementById('password').value;
+			
+			if (username === '' || password === '') {
+				alert('Vui lòng nhập đầy đủ thông tin');
+			} else {
+				// Thực hiện các hành động sau khi người dùng đăng nhập thành công
+				alert(`Chào mừng ${username} đã đăng nhập thành công`);
+				 window.location.href = 'http://127.0.0.1:5501/web1043-we18305/asigment2/index.html'; // Chuyển hướng đến trang khác
+			}
+		});
+	</script>
+</body>
+</html>
